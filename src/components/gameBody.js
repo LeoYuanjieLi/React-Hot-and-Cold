@@ -2,18 +2,45 @@ import React from 'react';
 
 import './gameBody.css';
 
-export default function GameBody(props) {
-    return (
-        <form>
-            <label>
-                <input type="text" name="name" placeholder="Type Your Guess"/>
-            </label>
-            <div>
-                <button type="submit" value="Submit" >Guess!</button>
-            </div>
-            <div className="count">
-                <p>Guessed: {props.count} times!</p>
-            </div>
-        </form>
-    );
+export default class GameBody extends React.Component {
+    constructor(){
+        super();
+        this.state ={
+            value: ""
+        }
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+
+
+    }
+    
+    handleSubmit(event){
+        event.preventDefault();
+        const number = this.state.value;
+        this.props.onAdd(number);
+
+    }
+    handleChange(event){
+        this.setState({value: event.target.value});
+
+    }
+
+
+    render() {
+
+        return (
+            <form onSubmit={this.handleSubmit}>
+                <label>
+                    <input type="number" placeholder="Type Your Guess" value={this.state.value} onChange={this.handleChange} max={100} min={0}/>
+                </label>
+                <div>
+                    <button type="submit" value="Submit" >Guess!</button>
+                </div>
+                <div className="count">
+                    <p>Guessed: {this.props.count} times!</p>
+                </div>
+            </form>
+        );
+    }
+
 };

@@ -5,6 +5,6 @@ In the Hot or Cold guessing game, the computer randomly selects a number between
 Clone or download the app. Make sure you installed react on your machine. run `npm start` in the directory in command line.
 
 ## Screenshot
-[img]("demo-image/image-1")
-[img]("demo-image/image-2")
-[img]("demo-image/image-3")
+[img]("./demo-image/image-1")
+[img]("./demo-image/image-2")
+[img]("./demo-image/image-3")

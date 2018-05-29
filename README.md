@@ -1,7 +1,7 @@
 # Challenge: Hot and Cold
 
 ## Deployment
-![link](https://leoyuanjieli-hot-or-cold.netlify.com/)
+https://leoyuanjieli-hot-or-cold.netlify.com/
 
 In the Hot or Cold guessing game, the computer randomly selects a number between 1 and 100, and the player then tries to guess the number. The player gets feedback for each guess – "hot" if their guess was too high, and "cold" if their guess was too low. When the user guesses the secret number, the app lets them know, and they'll have the option to start a new game.
 

@@ -3,8 +3,8 @@ import React from 'react';
 import './gameBody.css';
 
 export default class GameBody extends React.Component {
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
         this.state ={
             value: ""
         }

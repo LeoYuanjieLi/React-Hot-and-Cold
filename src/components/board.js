@@ -39,15 +39,15 @@ export default class Board extends React.Component {
       }
 
     addGuess(guess) {
-        if (this.isInArray(parseInt(guess), this.state.guessedArray)){
+        if (this.isInArray(parseInt(10, guess), this.state.guessedArray)){
             alert('number already added!');
         } else if(this.isCorrect()){
             alert('you already got the correct answer!')
         }
         else {
             this.setState({
-            guessedArray: [...this.state.guessedArray, parseInt(guess)],
-            currentGuess: parseInt(guess)
+            guessedArray: [...this.state.guessedArray, parseInt(10, guess)],
+            currentGuess: parseInt(10, guess)
         });
     }
 

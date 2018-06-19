@@ -46,8 +46,8 @@ export default class Board extends React.Component {
         }
         else {
             this.setState({
-            guessedArray: [...this.state.guessedArray, parseInt(10, guess)],
-            currentGuess: parseInt(10, guess)
+            guessedArray: [...this.state.guessedArray, parseInt(guess)],
+            currentGuess: parseInt(guess)
         });
     }
 

@@ -6,7 +6,7 @@ export default class GameBody extends React.Component {
     constructor(props){
         super(props);
         this.state ={
-            value: ""
+            value: "Type a number!"
         }
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
